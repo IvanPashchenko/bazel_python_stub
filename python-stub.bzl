@@ -3,7 +3,7 @@
 # but python is not actually used, so we'll stub it
 load("@rules_python//python:py_runtime_pair.bzl", "py_runtime_pair")
 load("@rules_python//python:py_runtime.bzl", "py_runtime")
-load("@bazel_tools//tools/python:toolchain.bzl")
+load("@bazel_tools//tools/python:toolchain.bzl", "toolchain")
 
 py_runtime(
     name = "python_stub_runtime",
