@@ -18,8 +18,8 @@ py_runtime_pair(
     py2_runtime = None,
 )
 
-toolchain(
-    name = "py_stub_toolchain",
+native.toolchain(
+    name           = "py_stub_toolchain",
     toolchain_type = "@rules_python//python:toolchain_type",
-    toolchain = ":py_stub_runtime_pair",
+    toolchain      = ":py_stub_runtime_pair",
 )
